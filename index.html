@@ -2,21 +2,15 @@
 <html lang="ru">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Извлечение текста из URL</title>
+    <title>Текст из URL</title>
     <script>
         function getTextFromUrl() {
-            
             const urlParams = new URLSearchParams(window.location.search);
-          
             const text = urlParams.get('text');
-           
-            document.getElementById('result').innerText = text ? text : 'Текст не найден';
+            document.body.innerText = text ? text : 'Текст не найден';
         }
     </script>
 </head>
 <body onload="getTextFromUrl()">
-    <h1>Извлечение текста из URL</h1>
-    <p id="result"></p>
 </body>
 </html>
