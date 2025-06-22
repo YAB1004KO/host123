@@ -1,13 +1,13 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
 <head>
     <meta charset="UTF-8">
-    <title>URL</title>
+    <title>Извлечение текста из URL</title>
     <script>
         function getTextFromUrl() {
             const urlParams = new URLSearchParams(window.location.search);
             const text = urlParams.get('text');
-            document.body.innerText = text ? text : 'text not found';
+            document.body.innerText = text ? text : 'Текст не найден';
         }
     </script>
 </head>
